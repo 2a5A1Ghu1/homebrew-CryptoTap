@@ -1,7 +1,7 @@
 class OpensslAT101k < Formula
   homepage "https://openssl.org"
-  url "https://www.openssl.org/source/openssl-1.0.1k.tar.gz"
-  mirror "https://github.com/2a5A1Ghu1/homebrew-CryptoTap/raw/master/prerequisites/openssl/openssl-1.0.1k.tar.gz"
+  url "https://github.com/2a5A1Ghu1/homebrew-CryptoTap/raw/master/prerequisites/openssl/openssl-1.0.1k.tar.gz"
+  mirror "https://www.openssl.org/source/openssl-1.0.1k.tar.gz"
   sha256 "8f9faeaebad088e772f4ef5e38252d472be4d878c6b3a2718c10a4fcebe7a41c"
 
   #bottle do
