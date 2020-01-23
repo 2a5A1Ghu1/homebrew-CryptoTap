@@ -39,7 +39,7 @@ class OpensslAT101k < Formula
     if build.universal?
       ENV.permit_arch_flags
       archs = Hardware::CPU.universal_archs
-    elsif MacOS.prefer_64_bit?
+    elsif Hardware::CPU.is_64_bit?
       archs = [Hardware::CPU.arch_64_bit]
     else
       archs = [Hardware::CPU.arch_32_bit]
