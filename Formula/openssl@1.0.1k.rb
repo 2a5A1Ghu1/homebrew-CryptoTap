@@ -1,4 +1,4 @@
-class Openssl < Formula
+class Openssl@1.0.1k < Formula
   homepage "https://openssl.org"
   url "https://www.openssl.org/source/openssl-1.0.1k.tar.gz"
   mirror "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/prerequisites/openssl/openssl-1.0.1k.tar.gz"
