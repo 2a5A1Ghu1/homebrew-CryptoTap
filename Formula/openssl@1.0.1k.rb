@@ -97,4 +97,4 @@ class OpensslAT101k < Formula
     #  assert_equal checksum, expected_checksum
     end
   #end
-end
+#end
