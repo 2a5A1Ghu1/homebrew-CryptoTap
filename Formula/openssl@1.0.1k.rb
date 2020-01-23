@@ -96,5 +96,5 @@ class OpensslAT101k < Formula
     #  checksum = f.read(100).split("=").last.strip
     #  assert_equal checksum, expected_checksum
     end
-  end
+  #end
 end
