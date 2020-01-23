@@ -12,7 +12,7 @@ class BoostAT1640 < Formula
     # Upstream PR from 26 Jan 2017 https://github.com/boostorg/mpi/pull/39
     patch :p2 do
       url "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/patches/f5bdcc1.patch"
-      sha256 "c7af75a83fef90fdb9858bc988d64ca569ae8d940396b9bc60a57d63fca2587b"
+      sha256 "97c417eaa7bcc421198c64cc25bb92c9a6da16f7176536f380eabde2449ab4cf"
     end
   end
 
