@@ -36,7 +36,7 @@ class OpensslAT101k < Formula
     ]
   end
 
-  #def install
+  def install
   #  if build.universal?
   #    ENV.permit_arch_flags
   #    archs = Hardware::CPU.universal_archs
@@ -135,4 +135,3 @@ class OpensslAT101k < Formula
       assert_equal checksum, expected_checksum
     end
   end
-end
