@@ -11,7 +11,7 @@ class BoostAT1640 < Formula
     # "Replace boost::serialization::detail::get_data function."
     # Upstream PR from 26 Jan 2017 https://github.com/boostorg/mpi/pull/39
     patch :p2 do
-      url "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/patches/f5bdcc1.patch"
+      url "https://raw.githubusercontent.com/2a5A1Ghu1/homebrew-CryptoTap/master/patches/f5bdcc1.patch"
       sha256 "c7af75a83fef90fdb9858bc988d64ca569ae8d940396b9bc60a57d63fca2587b"
     end
   end
