@@ -4,7 +4,7 @@ class BoostAT1640 < Formula
   head "https://github.com/boostorg/boost.git"
 
   stable do
-    url "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/prerequisites/boost/boost_1_64_0.tar.bz2"
+    url "https://github.com/2a5A1Ghu1/homebrew-CryptoTap/raw/master/prerequisites/boost/boost_1_64_0.tar.bz2"
     sha256 "7bcc5caace97baa948931d712ea5f37038dbb1c5d89b43ad4def4ed7cb683332"
 
     # Remove for > 1.64.0
