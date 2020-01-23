@@ -32,18 +32,19 @@ class OpensslAT101k < Formula
       zlib-dynamic
       shared
       enable-cms
+      darwin64-x86_64-cc
     ]
   end
 
-  def install
-    if build.universal?
-      ENV.permit_arch_flags
-      archs = Hardware::CPU.universal_archs
-    elsif Hardware::CPU.is_64_bit?
-      archs = [Hardware::CPU.arch_64_bit]
-    else
-      archs = [Hardware::CPU.arch_32_bit]
-    end
+  #def install
+  #  if build.universal?
+  #    ENV.permit_arch_flags
+  #    archs = Hardware::CPU.universal_archs
+  #  elsif Hardware::CPU.is_64_bit?
+  #    archs = [Hardware::CPU.arch_64_bit]
+  #  else
+  #    archs = [Hardware::CPU.arch_32_bit]
+  #  end
 
     dirs = []
 
