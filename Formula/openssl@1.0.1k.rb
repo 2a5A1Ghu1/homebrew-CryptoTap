@@ -1,14 +1,14 @@
 class Openssl < Formula
   homepage "https://openssl.org"
   url "https://www.openssl.org/source/openssl-1.0.1k.tar.gz"
-  mirror "https://raw.githubusercontent.com/DomT4/LibreMirror/master/OpenSSL/openssl-1.0.1k.tar.gz"
+  mirror "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/prerequisites/openssl/openssl-1.0.1k.tar.gz"
   sha256 "8f9faeaebad088e772f4ef5e38252d472be4d878c6b3a2718c10a4fcebe7a41c"
 
-  bottle do
-    sha1 "3d0e5529a124be70266dd2a2074f4f84db38bb19" => :yosemite
-    sha1 "449b81391bd9718b1ed7a37678c686b712669f38" => :mavericks
-    sha1 "8f1b30f6352486726b8420e80cceeecd49a61f82" => :mountain_lion
-  end
+  #bottle do
+  #  sha1 "3d0e5529a124be70266dd2a2074f4f84db38bb19" => :yosemite
+  #  sha1 "449b81391bd9718b1ed7a37678c686b712669f38" => :mavericks
+  #  sha1 "8f1b30f6352486726b8420e80cceeecd49a61f82" => :mountain_lion
+  #end
 
   option :universal
   option "without-check", "Skip build-time tests (not recommended)"
@@ -28,7 +28,7 @@ class Openssl < Formula
   def configure_args; %W[
       --prefix=#{prefix}
       --openssldir=#{openssldir}
-      no-ssl2
+      with-ssl2
       zlib-dynamic
       shared
       enable-cms

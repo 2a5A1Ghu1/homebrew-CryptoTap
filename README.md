@@ -7,7 +7,7 @@ CryptoTap is a custom [Homebrew](https://brew.sh) tap for building cryptocurrenc
 You can add the custom tap in a MacOS terminal session using:
 
 ```
-$ brew tap buddilla/CryptoTap
+$ brew tap 2a5A1Ghu1/CryptoTap
 ```
 
 ## Installing Formulae
