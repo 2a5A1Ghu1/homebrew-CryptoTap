@@ -18,5 +18,7 @@ Once the tap has been added, you can install with:
 $ brew install <formula>
 ```
 
+Note: all installs will be built from scratch so this will take some time to install
+
 example:
 
