@@ -5,14 +5,14 @@ class BoostAT1640 < Formula
 
   stable do
     url "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/prerequisites/boost/boost_1_64_0.tar.bz2"
-    sha256 "32c2a3350ef395ea83b2f7d1bf130815048ae943e70ac68a11fdc0c3e188e284"
+    #sha256 "32c2a3350ef395ea83b2f7d1bf130815048ae943e70ac68a11fdc0c3e188e284"
 
     # Remove for > 1.64.0
     # "Replace boost::serialization::detail::get_data function."
     # Upstream PR from 26 Jan 2017 https://github.com/boostorg/mpi/pull/39
     patch :p2 do
       url "https://github.com/2a5A1Ghu1/CryptoTap/blob/master/patches/f5bdcc1.patch"
-      sha256 "97c417eaa7bcc421198c64cc25bb92c9a6da16f7176536f380eabde2449ab4cf"
+      #sha256 "97c417eaa7bcc421198c64cc25bb92c9a6da16f7176536f380eabde2449ab4cf"
     end
   end
 
