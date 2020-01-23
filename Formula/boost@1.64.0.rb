@@ -1,4 +1,4 @@
-class Boost1.64.0 < Formula
+class BoostAT1640 < Formula
   desc "Collection of portable C++ source libraries"
   homepage "https://www.boost.org/"
   head "https://github.com/boostorg/boost.git"
