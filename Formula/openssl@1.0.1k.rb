@@ -1,4 +1,4 @@
-class opensslAT101k < Formula
+class OpensslAT101k < Formula
   homepage "https://openssl.org"
   url "https://www.openssl.org/source/openssl-1.0.1k.tar.gz"
   mirror "https://raw.githubusercontent.com/DomT4/LibreMirror/master/OpenSSL/openssl-1.0.1k.tar.gz"
