@@ -10,7 +10,7 @@ class LibeventAT217 < Formula
     # https://github.com/libevent/libevent/issues/376
     patch do
       url "https://github.com/libevent/libevent/commit/df6f99e5b51a3.patch"
-      sha256 "26e831f7b000c7a0d79fed68ddc1d9bd1f1c3fab8a3c150fcec04a3e282b1acb"
+      sha256 "96738f4923561984c068b345fb042fec09a7ce11de967376404bd02a429bc518"
     end
   end
 
