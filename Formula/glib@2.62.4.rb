@@ -1,4 +1,4 @@
-class GlibAT20 < Formula
+class GlibAT2624 < Formula
   desc "Core application library for C"
   homepage "https://developer.gnome.org/glib/"
   url "https://download.gnome.org/sources/glib/2.62/glib-2.62.4.tar.xz"
@@ -94,8 +94,8 @@ class GlibAT20 < Formula
           return (strcmp(str, result_2) == 0) ? 0 : 1;
       }
     EOS
-    system ENV.cc, "-o", "test", "test.c", "-I#{include}/glib-2.0",
-                   "-I#{lib}/glib-2.0/include", "-L#{lib}", "-lglib-2.0"
+    system ENV.cc, "-o", "test", "test.c", "-I#{include}/glib-2.64.2",
+                   "-I#{lib}/glib-2.64.2/include", "-L#{lib}", "-lglib-2.0"
     system "./test"
   end
 end
