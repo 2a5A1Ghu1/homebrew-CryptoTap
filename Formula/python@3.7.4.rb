@@ -1,4 +1,4 @@
-class Python < Formula
+class PythonAT374 < Formula
   desc "Interpreted, interactive, object-oriented programming language"
   homepage "https://www.python.org/"
   url "https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz"
@@ -24,7 +24,7 @@ class Python < Formula
 
   depends_on "pkg-config" => :build
   depends_on "gdbm"
-  depends_on "openssl@1.0.1k"
+  depends_on "openssl@1.0.2t"
   depends_on "readline"
   depends_on "sqlite"
   depends_on "xz"
