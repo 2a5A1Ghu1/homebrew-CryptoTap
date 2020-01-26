@@ -67,8 +67,8 @@ class CairoAT1160 < Formula
       -I#{fontconfig.opt_include}
       -I#{freetype.opt_include}/freetype2
       -I#{gettext.opt_include}
-      -I#{glib.opt_include}/glib-2.0
-      -I#{glib.opt_lib}/glib-2.0/include
+      -I#{glib.opt_include}/glib-2.62.4
+      -I#{glib.opt_lib}/glib-2.62.4/include
       -I#{include}/cairo
       -I#{libpng.opt_include}/libpng16
       -I#{pixman.opt_include}/pixman-1
