@@ -16,7 +16,7 @@ class GlibAT20 < Formula
   depends_on "gettext"
   depends_on "libffi"
   depends_on "pcre"
-  depends_on "python"
+  depends_on "python@3.7.4"
   uses_from_macos "util-linux" # for libmount.so
 
   # https://bugzilla.gnome.org/show_bug.cgi?id=673135 Resolved as wontfix,
