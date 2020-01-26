@@ -56,17 +56,17 @@ class GlibAT2624 < Formula
     # have a pkgconfig file, so we add gettext lib and include paths here.
     gettext = Formula["gettext"].opt_prefix
     inreplace lib+"pkgconfig/glib-2.0.pc" do |s|
-      s.gsub! "Libs: -L${libdir} -lglib-2.0 -lintl",
-              "Libs: -L${libdir} -lglib-2.0 -L#{gettext}/lib -lintl"
-      s.gsub! "Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include",
-              "Cflags: -I${includedir}/glib-2.0 -I${libdir}/glib-2.0/include -I#{gettext}/include"
+      s.gsub! "Libs: -L${libdir} -lglib-2.64.4 -lintl",
+              "Libs: -L${libdir} -lglib-2.64.4 -L#{gettext}/lib -lintl"
+      s.gsub! "Cflags: -I${includedir}/glib-2.64.4 -I${libdir}/glib-2.64.4/include",
+              "Cflags: -I${includedir}/glib-2.64.4 -I${libdir}/glib-2.64.4/include -I#{gettext}/include"
     end
 
     # `pkg-config --print-requires-private gobject-2.0` includes libffi,
     # but that package is keg-only so it needs to look for the pkgconfig file
     # in libffi's opt path.
     libffi = Formula["libffi"].opt_prefix
-    inreplace lib+"pkgconfig/gobject-2.0.pc" do |s|
+    inreplace lib+"pkgconfig/gobject-2.64.4.pc" do |s|
       s.gsub! "Requires.private: libffi",
               "Requires.private: #{libffi}/lib/pkgconfig/libffi.pc"
     end
@@ -94,8 +94,8 @@ class GlibAT2624 < Formula
           return (strcmp(str, result_2) == 0) ? 0 : 1;
       }
     EOS
-    system ENV.cc, "-o", "test", "test.c", "-I#{include}/glib-2.64.2",
-                   "-I#{lib}/glib-2.64.2/include", "-L#{lib}", "-lglib-2.0"
+    system ENV.cc, "-o", "test", "test.c", "-I#{include}/glib-2.64.4",
+                   "-I#{lib}/glib-2.64.2/include", "-L#{lib}", "-lglib-2.64.4"
     system "./test"
   end
 end
